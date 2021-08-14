@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>MatGames | Home</title>
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Header with the log in and register options -->
+        <header class="header">
+            <a href="index.html"><img class="header__logo" src="images/logo.png" alt="Company-Icon"/></a>
+            <div class="header__buttons">
+                <a href="login.html"><input class="button" type="button" value="Login" /></a>
+                <a href="register.html"><input class="button" type="button" value="Register" /></a>
+            </div>
+        </header>
+        <main class="main__home">
+            <!-- Left sidebar with all the options -->
+            <section class="navigationBar">
+                <nav> 
+                    <ul class="navBar__list">
+                        <li class="button"><a href="advanced-search.html">Search</a></li>
+                        <li class="button"><a href="advanced-search.html#featured-games">Discover</a></li>
+                        <li class="button"><a href="wishlist.html">Wishlist</a></li>
+                        <li class="button"><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </section>
+            <!-- Right section with the game offers -->
+            <section class="offers">
+                <h1 class="offers__title">Offers</h1>
+                <!-- An article containing all the game information isolated -->
+                <article class="highlightedGame">
+                    <img class="highlightedGame__image" src="https://i.ytimg.com/vi/gTNrBp_Ckio/maxresdefault.jpg" alt="game-background"/>
+                    <div class="highlightedGame__internalInfo--position">
+                        <h2 class="highlightedGame__title">Metro Exodus</h2>
+                        <p class="highlightedGame__description">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium impedit perspiciatis distinctio corrupti quo laboriosam dicta maxime illum sequi, quae a, temporibus modi voluptate, vitae odio earum ex illo nam voluptates voluptatem velit. Eum animi maiores fuga voluptates tempore explicabo similique totam reiciendis esse laboriosam eius mollitia excepturi incidunt, aut recusandae quo at tempora modi dolorum. Architecto, odit iure dicta reprehenderit eaque, blanditiis, ipsa sed sunt ullam vel necessitatibus officia maiores ab voluptatibus eos! Iste eveniet possimus natus molestiae et, rem cupiditate aliquam aliquid fugiat officia, eaque nulla aperiam voluptatem laboriosam reprehenderit dolor voluptatum tempora exercitationem? Recusandae placeat explicabo quod?
+                        </p>
+                        <div class="highlightedGame__price">
+                            <p class="highlightedGame__price__text">USD 20</p>
+                            <input class="button highlightedGame__price__button" type="button" value="GET IT NOW" />
+                        </div>
+                    </div>
+                </article>
+                <div class="sliderBottom">
+                    <input class="button" type="button" value="PREVIOUS" />
+                    <progress class="progressBar">Progress Bar</progress>
+                    <input class="button" type="button" value="NEXT" />
+                </div>
+            </section>
+        </main>
+        <!-- Footer section -->
+        <footer class="footer">
+            <p class="footer__text">All rights reserved - Matias M 2021</p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MatGames | Login Page</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html"><img class="header__logo" src="images/logo.png" alt="Company-Icon"/></a>
+        <div class="header__buttons">
+            <a href="register.html"><input class="button" type="button" value="Register" /></a>
+        </div>
+    </header>
+    <main class="main__login">
+        <h1 class="form__title">MatGames Store</h1>
+        <section class="form__section">
+            <form class="form__fieldSet" action="GET">
+                <label class="field__label" for="username">Username</label>
+                <input class="input" type="text" name="username" id="username" placeholder="Please insert your username...">
+                <label class="field__label" for="password">Password</label>
+                <input class="input" type="password" name="password" id="password" placeholder="Please insert your password...">
+                <div class="remember__section">
+                    <label class="field__label" for="remember-password">Remember password?</label>
+                    <input type="checkbox" name="remember-password" id="remember-password" value="1">
+                    <a href="">Forgot Your Password</a>
+                </div>
+                <input id="login__button" class="button" type="submit" value="Log in">
+            </form>
+            <p>
+                You don't have an account? <a href="register.html"><input class="button" type="button" value="Register" /></a>
+            </p>
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="footer__text">All rights reserved - Matias M 2021</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MatGames | Register Page</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;700&display=swap" rel="stylesheet">
+</head>
+<body class="register__body">
+    <header class="header">
+        <a href="index.html"><img class="header__logo" src="images/logo.png" alt="Company-Icon"/></a>
+        <div class="header__buttons">
+            <a href="login.html"><input class="button" type="button" value="Login" /></a>
+        </div>
+    </header>
+    <main class="main__register">
+        <h1 class="register__form__title">Register</h1>
+        <section class="register__form__section">
+            <form class="register__form__fieldSet" action="GET">
+                <label class="field__label" for="country">Country</label>
+                <select class="input" name="country" id="country">
+                    <option value="none" disabled selected>Please select a country...</option>
+                    <option value="UY">Uruguay</option>
+                    <option value="AR">Argentina</option>
+                    <option value="BR">Brazil</option>
+                    <option value="PY">Paraguay</option>
+                    <option value="EC">Ecuador</option>
+                    <option value="CO">Colombia</option>
+                    <option value="CL">Chile</option>
+                </select>
+                <label class="field__label" for="firstname">First Name</label>
+                <input class="input" type="text" name="firstname" id="firstname" placeholder="Enter your first name...">
+                <label class="field__label" for="lastname">Last Name</label>
+                <input class="input" type="text" name="lastname" id="lastname" placeholder="Enter your last name...">
+                <label class="field__label" for="username">Username</label>
+                <input class="input" type="text" name="username" id="username" placeholder="Enter a username...">
+                <label class="field__label" for="email">E-mail</label>
+                <input class="input" type="email" name="email" id="email" placeholder="Enter your e-mail...">
+                <label class="field__label" for="password">Password</label>
+                <input class="input" type="password" name="password" id="password" placeholder="Enter your password...">
+                <div class="register__newsletter__section">
+                    <label class="field__label" for="newsletter">Do you want to receive newsletters?</label>
+                    <input class="input" type="checkbox" id="newsletter" name="newsletter" value="1">
+                </div>
+                <div class="register__terms__section">
+                    <label class="field__label" for="terms">Accept terms and conditions</label>
+                    <input class="input" type="checkbox" id="terms" name="terms" value="1">
+                </div>
+                <input id="register__button" class="button" type="submit" value="Register">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>All rights reserved - Matias M 2021</p>
+    </footer>
+</body>
+</html>

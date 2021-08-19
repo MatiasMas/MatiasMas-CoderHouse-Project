@@ -15,35 +15,42 @@ body {
     height: 100vh;
 }
 
-header {
-    height: 20vh;
-    background-color: cadetblue;
+/* ----------------------------------- */
+
+.slider {
 }
 
-main {
-    height: 70vh;
-    background-color: burlywood;
+.carousel-inner > .carousel-item > img {
+    height: 80vh;
 }
 
-footer {
-    height: 10vh;
-    background-color: chocolate;
+.carousel-inner
+    > .carousel-item
+    > div.carousel-caption
+    > div.game__description {
+    border-radius: 3px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.514);
+    margin-bottom: 10px;
 }
 
-/* Positiong header logo */
-.header__logo {
-    height: 120px;
-    width: 130px;
-    padding-left: 35px;
-    padding-top: 10px;
+#offers__slider {
+    padding: 0;
+    margin: 0;
 }
 
-/* Positioning header buttons */
-.header__buttons {
-    display: inline-block;
-    position: absolute;
-    right: 20px;
-    top: 15px;
+#offcanvasNavbar {
+    background-color: rgba(0, 0, 0, 0.664);
+}
+
+.close__swipe__button {
+    height: 50px;
+    width: 50px;
+}
+
+.menu__options li {
+    width: 200px;
+    text-align: center;
 }
 
 /* Button default styles */
@@ -58,6 +65,44 @@ footer {
     text-decoration: none;
     overflow: hidden;
     transition: all 0.5s;
+}
+
+body > header > nav {
+    height: 10vh;
+}
+
+header {
+    height: 10vh;
+    background-color: cadetblue;
+}
+
+main {
+    height: 80vh;
+    background-color: burlywood;
+}
+
+footer {
+    height: 10vh;
+    background-color: black;
+    color: rgba(255, 255, 255, 0.562);
+}
+
+/* ---------------------------------- */
+
+/* Positiong header logo */
+.header__logo {
+    height: 50px;
+    width: 50px;
+    /* padding-left: 35px; */
+    /* padding-top: 10px; */
+}
+
+/* Positioning header buttons */
+.header__buttons {
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+    top: 15px;
 }
 
 /* Button properties */
@@ -79,7 +124,7 @@ footer {
 /* Aligning everything to center */
 .main__home {
     display: flex;
-    width: 80%;
+    /* width: 80%; */
     margin: auto;
     align-items: center;
 }
@@ -100,12 +145,6 @@ footer {
 .highlightedGame__description {
     text-align: justify;
     font-size: 1.3rem;
-}
-
-/* Positioning footer to the right */
-footer {
-    /* float: right; */
-    padding: 15px;
 }
 
 /* Erasing bullets from the navbar list and managing nav items with flexbox*/

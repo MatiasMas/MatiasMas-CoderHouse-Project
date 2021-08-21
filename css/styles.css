@@ -8,17 +8,11 @@ body {
     background-color: black;
     color: blak;
     font-family: "Noto Sans TC", Arial, sans-serif;
-    /* background-image: url("../images/backgroundsite.webp"); */
-    /* background-repeat: no-repeat; */
-    /* background-size: cover; */
     animation: fadeIn 0.8s;
     height: 100vh;
 }
 
 /* ----------------------------------- */
-
-.slider {
-}
 
 .carousel-inner > .carousel-item > img {
     height: 80vh;
@@ -39,8 +33,18 @@ body {
     margin: 0;
 }
 
+.menu__area {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.897);
+}
+
+.offers__desktop {
+    /* height: 50vh; */
+    width: ;
+}
+
 #offcanvasNavbar {
-    background-color: rgba(0, 0, 0, 0.664);
+    background-color: rgba(8, 8, 8, 0.719);
 }
 
 .close__swipe__button {
@@ -51,6 +55,16 @@ body {
 .menu__options li {
     width: 200px;
     text-align: center;
+}
+
+.loginRegister__options {
+    background-color: rgba(255, 166, 0, 0.15);
+    border-radius: 4px;
+}
+
+.sidebar__options {
+    background-color: rgba(255, 166, 0, 0.15);
+    border-radius: 4px;
 }
 
 /* Button default styles */
@@ -73,12 +87,12 @@ body > header > nav {
 
 header {
     height: 10vh;
-    background-color: cadetblue;
+    background-color: black;
 }
 
 main {
     height: 80vh;
-    background-color: burlywood;
+    background-color: black;
 }
 
 footer {
@@ -95,6 +109,11 @@ footer {
     width: 50px;
     /* padding-left: 35px; */
     /* padding-top: 10px; */
+}
+
+.header__logo--desktop {
+    height: 80px;
+    width: 80px;
 }
 
 /* Positioning header buttons */
@@ -152,6 +171,8 @@ footer {
     list-style: none;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Erasing <a> tag default styles */
@@ -161,7 +182,7 @@ footer {
 }
 
 .navBar__list li {
-    margin-bottom: 10%;
+    width: 200px;
 }
 
 /* First column with the navigation */

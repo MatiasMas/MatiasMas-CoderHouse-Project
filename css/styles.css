@@ -42,19 +42,15 @@ body {
   background-color: #dd9000;
   color: white; }
 
-/* Positiong header logo */
-.header__logo {
+.header__navbar__mobile--logo {
   height: 50px;
-  width: 50px;
-  /* padding-left: 35px; */
-  /* padding-top: 10px; */ }
+  width: 50px; }
 
-.header__logo--desktop {
+.header__navbar__desktop--logo {
   height: 80px;
   width: 80px; }
 
-/* Positioning header buttons */
-.header__buttons {
+.header__navbar__desktop--buttons {
   display: inline-block;
   position: absolute;
   right: 20px;
@@ -78,7 +74,7 @@ body {
   padding: 0;
   margin: 0; }
 
-.menu__area {
+.main__block__options--menu {
   text-align: center;
   background-color: rgba(0, 0, 0, 0.897); }
 

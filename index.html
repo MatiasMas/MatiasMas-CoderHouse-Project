@@ -5,59 +5,189 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>MatGames | Home</title>
-        <link rel="stylesheet" href="css/styles.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;700&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/normalize.css"/>
+        <link rel="stylesheet" href="css/style.css"/>
     </head>
-    <body>
+    <body class="container">
         <!-- Header with the log in and register options -->
-        <header class="header">
-            <a href="index.html"><img class="header__logo" src="images/logo.png" alt="Company-Icon"/></a>
-            <div class="header__buttons">
-                <a href="login.html"><input class="button" type="button" value="Login" /></a>
-                <a href="register.html"><input class="button" type="button" value="Register" /></a>
-            </div>
-        </header>
-        <main class="main__home">
-            <!-- Left sidebar with all the options -->
-            <section class="navigationBar">
-                <nav> 
-                    <ul class="navBar__list">
-                        <li class="button"><a href="advanced-search.html">Search</a></li>
-                        <li class="button"><a href="advanced-search.html#featured-games">Discover</a></li>
-                        <li class="button"><a href="wishlist.html">Wishlist</a></li>
-                        <li class="button"><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-            </section>
-            <!-- Right section with the game offers -->
-            <section class="offers">
-                <h1 class="offers__title">Offers</h1>
-                <!-- An article containing all the game information isolated -->
-                <article class="highlightedGame">
-                    <img class="highlightedGame__image" src="https://i.ytimg.com/vi/gTNrBp_Ckio/maxresdefault.jpg" alt="game-background"/>
-                    <div class="highlightedGame__internalInfo--position">
-                        <h2 class="highlightedGame__title">Metro Exodus</h2>
-                        <p class="highlightedGame__description">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium impedit perspiciatis distinctio corrupti quo laboriosam dicta maxime illum sequi, quae a, temporibus modi voluptate, vitae odio earum ex illo nam voluptates voluptatem velit. Eum animi maiores fuga voluptates tempore explicabo similique totam reiciendis esse laboriosam eius mollitia excepturi incidunt, aut recusandae quo at tempora modi dolorum. Architecto, odit iure dicta reprehenderit eaque, blanditiis, ipsa sed sunt ullam vel necessitatibus officia maiores ab voluptatibus eos! Iste eveniet possimus natus molestiae et, rem cupiditate aliquam aliquid fugiat officia, eaque nulla aperiam voluptatem laboriosam reprehenderit dolor voluptatum tempora exercitationem? Recusandae placeat explicabo quod?
-                        </p>
-                        <div class="highlightedGame__price">
-                            <p class="highlightedGame__price__text">USD 20</p>
-                            <input class="button highlightedGame__price__button" type="button" value="GET IT NOW" />
-                        </div>
+        <header class="row">
+            <nav class="header__navbar navbar navbar-dark">
+                <!-- Navbar mobile -->
+                <div class="container-fluid d-md-none d-flex align-items-center">
+                  <a class="navbar-brand" href="index.html">
+                      <img class="header__logo" src="images/logo.png" alt="">
+                  </a>
+                  <h3 class="text-white">MatGames</h3>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="close__swipe__button offcanvas-header">
+                      <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
-                </article>
-                <div class="sliderBottom">
-                    <input class="button" type="button" value="PREVIOUS" />
-                    <progress class="progressBar">Progress Bar</progress>
-                    <input class="button" type="button" value="NEXT" />
+                    <div class="offcanvas-body d-flex align-items-center flex-column justify-content-evenly">
+                        <div class="loginRegister__options p-5">
+                            <ul class="menu__options m-0 p-0">
+                                <li class="button nav-item">
+                                    <a class="nav-link btn text-white" aria-current="page" href="login.html">Login</a>
+                                </li>
+                                <li class="button nav-item">
+                                    <a class="nav-link btn text-white" aria-current="page" href="register.html">Register</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="sidebar__options p-5">
+                            <ul class="menu__options navbar-nav d-flex align-items-center justify-content-center flex-grow-1">
+                                <li class="button nav-item">
+                                    <a class="nav-link btn text-white" aria-current="page" href="advanced-search.html">Search</a>
+                                </li>
+                                <li class="button nav-item">
+                                    <a class="nav-link text-white" href="advanced-search.html#featured-games">Discover</a>
+                                </li>
+                                <li class="button nav-item">
+                                    <a class="nav-link text-white" href="wishlist.html">Wishlist</a>
+                                </li>
+                                <li class="button nav-item">
+                                    <a class="nav-link text-white" href="contact.html">Contact</a>
+                                </li>
+                              </ul>
+                        </div>
+
+                    </div>
+                  </div>
                 </div>
+                <!-- Navbar desktop -->
+                <div class="container-fluid d-none d-md-block">
+                    <a href="index.html"><img class="header__logo--desktop" src="images/logo.png" alt="Company-Icon"/></a>
+                    <div class="header__buttons">
+                        <a href="login.html"><input class="button" type="button" value="Login" /></a>
+                        <a href="register.html"><input class="button" type="button" value="Register" /></a>
+                    </div>
+                </div>
+              </nav>
+        </header>
+        <main class="main row">
+
+            <!-- Div to contain all desktop sections -->
+            <div class="desktop__container row d-flex align-items-center">
+                <!-- Left sidebar with all the options for desktop, on mobile it works on the header -->
+                <section class="row d-none d-md-block bg-light p-0 m-0 col-md-3">
+                    <div class="menu__area d-flex justify-content-center py-5">
+                        <ul class="navBar__list p-0 m-0">
+                            <li class="button"><a href="advanced-search.html">Search</a></li>
+                            <li class="button"><a href="advanced-search.html#featured-games">Discover</a></li>
+                            <li class="button"><a href="wishlist.html">Wishlist</a></li>
+                            <li class="button"><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </section>
+                <!-- Offers Slider for desktop -->
+                <section class="offers__section row slider m-0 p-0 d-none d-md-block col-md-9">
+                    <div id="offers__slider--desktop" class="offers__desktop carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#offers__slider--desktop" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#offers__slider--desktop" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#offers__slider--desktop" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://picsum.photos/800/500" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-md-block">
+                                <div class="game__description">
+                                    <h5>Metro Exodus</h5>
+                                    <p>Best shooter in the genre, play it now.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://picsum.photos/800/500" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-md-block">
+                                <div class="game__description">
+                                    <h5>Doctor Who</h5>
+                                    <p>You want to be the most intelligent person on the planet? Play it now.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://picsum.photos/800/500" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-md-block">
+                                <div class="game__description">
+                                    <h5>Jurassic Park</h5>
+                                    <p>Run through the funniest park in the world but be precautious...</p>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#offers__slider--desktop" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#offers__slider--desktop" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Offers Slider for mobile -->
+            <section class="row slider m-0 p-0 d-md-none">
+                <div id="offers__slider" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#offers__slider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#offers__slider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#offers__slider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="images/metro-mobile.jpeg" class="d-block w-100 carousel__img--mobile" alt="...">
+                        <div class="carousel-caption d-md-block">
+                            <div class="game__description">
+                                <h5>Metro Exodus</h5>
+                                <p>Best shooter in the genre, play it now.</p>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/doctorwho-mobile.jpeg" class="d-block w-100 carousel__img--mobile" alt="...">
+                        <div class="carousel-caption d-md-block">
+                            <div class="game__description">
+                                <h5>Doctor Who</h5>
+                                <p>You want to be the most intelligent person on the planet? Play it now.</p>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/jurassic-mobile.jpeg" class="d-block w-100 carousel__img--mobile" alt="...">
+                        <div class="carousel-caption d-md-block">
+                            <div class="game__description">
+                                <h5>Jurassic Park</h5>
+                                <p>Run through the funniest park in the world but be precautious...</p>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#offers__slider" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#offers__slider" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
             </section>
+
         </main>
         <!-- Footer section -->
-        <footer class="footer">
-            <p class="footer__text">All rights reserved - Matias M 2021</p>
+        <footer class="footer row">
+            <h6 class="d-flex justify-content-center align-items-center">All rights reserved - Matias Mas 2021</>
         </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
     </body>
 </html>

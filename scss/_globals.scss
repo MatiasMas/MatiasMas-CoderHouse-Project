@@ -1,0 +1,22 @@
+/* Default size on html for rem units */
+html {
+    font-size: 62.5%;
+}
+
+/* General css rules for the entire body */
+body {
+    background-color: black;
+    color: blak;
+    font-family: "Noto Sans TC", Arial, sans-serif;
+    animation: fadeIn 0.8s;
+    height: 100vh;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

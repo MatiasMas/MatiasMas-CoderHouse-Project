@@ -1,0 +1,145 @@
+/* Default size on html for rem units */
+html {
+  font-size: 62.5%; }
+
+/* General css rules for the entire body */
+body {
+  background-color: black;
+  color: blak;
+  font-family: "Noto Sans TC", Arial, sans-serif;
+  animation: fadeIn 0.8s;
+  height: 100vh; }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+/* Button default styles */
+.button {
+  padding: 10px 15px;
+  text-transform: uppercase;
+  margin: 5px;
+  background-color: black;
+  border: 3px solid white;
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+  overflow: hidden;
+  transition: all 0.5s; }
+
+/* Button properties */
+.button:hover {
+  background-color: orange;
+  transform: scale(1.2, 1.2); }
+
+.button:visited {
+  background-color: black;
+  color: white; }
+
+.button:active {
+  background-color: #dd9000;
+  color: white; }
+
+/* Positiong header logo */
+.header__logo {
+  height: 50px;
+  width: 50px;
+  /* padding-left: 35px; */
+  /* padding-top: 10px; */ }
+
+.header__logo--desktop {
+  height: 80px;
+  width: 80px; }
+
+/* Positioning header buttons */
+.header__buttons {
+  display: inline-block;
+  position: absolute;
+  right: 20px;
+  top: 15px; }
+
+.footer {
+  height: 10vh;
+  background-color: black;
+  color: rgba(255, 255, 255, 0.562); }
+
+.carousel__img--mobile {
+  height: 80vh; }
+
+.carousel-inner .carousel-item div.carousel-caption div.game__description {
+  border-radius: 3px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.514);
+  margin-bottom: 10px; }
+
+#offers__slider {
+  padding: 0;
+  margin: 0; }
+
+.menu__area {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.897); }
+
+#offcanvasNavbar {
+  background-color: rgba(8, 8, 8, 0.719); }
+
+.close__swipe__button {
+  height: 50px;
+  width: 50px; }
+
+.menu__options li {
+  width: 200px;
+  text-align: center; }
+
+.loginRegister__options {
+  background-color: rgba(255, 166, 0, 0.15);
+  border-radius: 4px; }
+
+.sidebar__options {
+  background-color: rgba(255, 166, 0, 0.15);
+  border-radius: 4px; }
+
+.header__navbar {
+  height: 10vh;
+  background-color: black; }
+
+.main {
+  height: 80vh;
+  background-color: black; }
+
+/* Aligning everything to center */
+.main__home {
+  display: flex;
+  margin: auto;
+  align-items: center; }
+
+/* Erasing bullets from the navbar list and managing nav items with flexbox*/
+.navBar__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+/* Erasing <a> tag default styles */
+.navBar__list li a {
+  text-decoration: none;
+  color: white; }
+
+.navBar__list li {
+  width: 200px; }
+
+/* First column with the navigation */
+.navigationBar {
+  /* background-color: rgba(196, 196, 196, 0.089); */
+  padding: 30px;
+  font-size: 2rem;
+  text-transform: uppercase;
+  width: 10%; }
+
+/* Aligning bottom buttons */
+.sliderBottom {
+  text-align: center;
+  width: 100%; }

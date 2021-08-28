@@ -1,0 +1,20 @@
+/* Positiong header logo */
+.header__logo {
+    height: 50px;
+    width: 50px;
+    /* padding-left: 35px; */
+    /* padding-top: 10px; */
+}
+
+.header__logo--desktop {
+    height: 80px;
+    width: 80px;
+}
+
+/* Positioning header buttons */
+.header__buttons {
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+}

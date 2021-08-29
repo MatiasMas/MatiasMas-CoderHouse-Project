@@ -20,13 +20,13 @@
     margin: 0;
 }
 
-.main__block__options--menu {
+.main__home__options--menu {
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.897);
+    background-color: $background-black-low-opacity;
 }
 
 #offcanvasNavbar {
-    background-color: rgba(8, 8, 8, 0.719);
+    background-color: $background-black-low-opacity;
 }
 
 .close__swipe__button {
@@ -42,12 +42,12 @@
 }
 
 .loginRegister__options {
-    background-color: rgba(255, 166, 0, 0.15);
+    background-color: $background-orange-low-opacity;
     border-radius: 4px;
 }
 
 .sidebar__options {
-    background-color: rgba(255, 166, 0, 0.15);
+    background-color: $background-orange-low-opacity;
     border-radius: 4px;
 }
 

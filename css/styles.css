@@ -210,3 +210,87 @@ body {
     padding: 80px 60px 80px 60px;
     margin-bottom: 70px;
     border-radius: 5px; } }
+
+.main__register {
+  height: 90vh; }
+  .main__register--title {
+    margin-top: 50px; }
+    .main__register--title a {
+      color: white;
+      text-decoration: none; }
+  .main__register__form {
+    width: 95%; }
+    .main__register__form--title {
+      color: white;
+      margin-bottom: 23px;
+      text-align: center; }
+    .main__register__form__fieldset--label {
+      color: white; }
+    .main__register__form__fieldset--input, .main__register__form__fieldset--select {
+      background-color: rgba(0, 0, 0, 0.897);
+      height: 45px;
+      margin-bottom: 25px;
+      font-size: 1.5rem;
+      color: white;
+      border-color: #3f3e3e;
+      padding: 30px 30px 30px 25px;
+      transition: all 0.3s; }
+      .main__register__form__fieldset--input:focus, .main__register__form__fieldset--select:focus {
+        background-color: rgba(0, 0, 0, 0.767);
+        color: white;
+        transform: scale(1.03, 1.03); }
+    .main__register__form__fieldset--select {
+      height: 62px;
+      padding: 0px 0px 0px 26px; }
+    .main__register__form__fieldset__remember--label {
+      color: rgba(255, 255, 255, 0.664);
+      font-size: 1.5rem;
+      margin-right: 5px; }
+    .main__register__form__fieldset__remember--input {
+      font-size: 15px;
+      background-color: rgba(128, 128, 128, 0.541);
+      margin-right: 7px; }
+    .main__register__form__fieldset__remember--link {
+      font-size: 1.5rem;
+      color: white; }
+    .main__register__form__fieldset--submit {
+      width: 100%;
+      margin: 0px;
+      margin-top: 30px;
+      height: 60px;
+      font-size: 1.3rem;
+      border-color: rgba(255, 255, 255, 0.315); }
+      .main__register__form__fieldset--submit:hover {
+        transform: scale(1.05, 1.05); }
+    .main__register__form__register {
+      margin-top: 50px;
+      text-align: center; }
+      .main__register__form__register--text {
+        font-size: 1.5rem;
+        color: rgba(255, 255, 255, 0.671); }
+      .main__register__form__register--link {
+        font-size: 1.5rem;
+        margin-left: 10px;
+        color: white; }
+
+@media screen and (min-width: 600px) {
+  .register {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%; }
+  .main__register__form {
+    background-color: rgba(31, 30, 30, 0.584);
+    padding: 80px 60px 80px 60px;
+    margin-bottom: 70px;
+    border-radius: 5px; } }
+
+@media screen and (max-width: 600px) {
+  .footer__register {
+    margin-top: 20px; }
+  .main__register__form__register {
+    margin-top: 20px; }
+    .main__register__form__register--text {
+      font-size: 1.3rem; }
+    .main__register__form__register--link {
+      font-size: 1.3rem; } }

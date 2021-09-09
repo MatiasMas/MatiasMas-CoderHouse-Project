@@ -5,41 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MatGames | Contact Us</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/styles.css"/>
 </head>
-<body>
-    <header>
-        <a href="index.html"><img class="mat-games-logo" src="https://w7.pngwing.com/pngs/751/102/png-transparent-joystick-game-controllers-video-game-computer-icons-gamepad-electronics-rectangle-logo.png" alt="Company-Icon"/></a>
-        <a href="login.html"><input type="button" value="Login" /></a>
-        <a href="register.html"><input type="button" value="Register" /></a>
-    </header>
-    <main>
-        <h1>MatGames</h1>
-        <section>
-            <form action="GET">
-                <fieldset>
-                    <legend>Contact Us</legend>
-                    <label for="name">Name:</label>
-                    <input type="text" name="name" id="name" placeholder="Please insert your name...">
-                    <label for="email">Email:</label>
-                    <input type="email" name="email" id="email" placeholder="Please insert your email...">
-                    <label for="subject">Subject:</label>
-                    <select name="subject" id="subject">
-                        <option disabled selected value="none">Select an option...</option>
-                        <option value="suggestion">Suggestion</option>
-                        <option value="complaint">Complain</option>
-                        <option value="request">Request</option>
-                    </select>
-                    <label for="comment">Comment:</label>
-                    <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
-                    <input type="reset">
-                    <input type="submit">
-                </fieldset>
+<body class="contact container">
+    <main class="main__contact row justify-content-center">
+        <h1 class="main__contact--title d-flex justify-content-center"><a href="index.html">MatGames Store</a></h1>
+        <section class="main__contact__form">
+            <h2 class="main__contact__form--title">Get in touch!</h2>
+            <form class="main__contact__form__fieldset" action="GET">
+                <div>
+                    <select class="main__contact__form__fieldset--select form-select" aria-label="subject" name="subject" id="subject">
+                        <option value="none" disabled selected>Select a subject...</option>
+                        <option value="S">Suggestion</option>
+                        <option value="C">Complaint</option>
+                        <option value="R">Request</option>
+                    </input>
+                </div>
+                <div class="form-floating">
+                    <input class="main__contact__form__fieldset--input form-control" type="text" name="full-name" id="full-name" placeholder="Full name">
+                </div>
+                <div>
+                    <input class="main__contact__form__fieldset--input form-control" type="email" name="email" id="email" placeholder="Email">
+                </div>
+                <div>
+                    <textarea class="main__contact__form__fieldset--textarea form-control" name="comment" id="comment" placeholder="Please tell us what you have in mind!" cols="30" rows="10"></textarea>
+                </div>
+                <input class="main__contact__form__fieldset--submit button" type="submit" value="contact now">
             </form>
         </section>
     </main>
-    <footer>
-        <p>All rights reserved - Matias M 2021</p>
+    <footer class="footer__contact footer row">
+        <p class="footer__contact-text d-flex justify-content-center align-items-center">All rights reserved - Matias M 2021</p>
     </footer>
 </body>
 </html>

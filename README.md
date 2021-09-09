@@ -12,3 +12,4 @@ Change log:
 -   1.1.1 : Aplicando BEM al index.html y aplicando BEM + Sass en \_header.scss
 -   1.2.0 : Rehaciendo desde cero la pagina de login.html, uso completo de sass con media queries para adaptar algunos estilos a desktop -> \_login.scss
 -   1.3.0 : Borrado de codigo comentado en login.html, rehaciendo register.html para que sea responsive siguiendo mismos estilos que pagina de login.
+-   1.4.0 : Arreglando un bug donde se generaba scroll en las paginas de registro y de contacto, creando la pagina de contacto siguiendo mismos estilos que pagina de login y registro.

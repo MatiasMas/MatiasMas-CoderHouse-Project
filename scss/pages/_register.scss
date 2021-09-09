@@ -116,18 +116,19 @@
 
 @media screen and (max-width: 600px) {
     .footer__register {
-        margin-top: 20px;
+        margin-top: 40px;
+        height: 5vh;
     }
 
     .main__register__form__register {
         margin-top: 20px;
 
         &--text {
-            font-size: 1.3rem;
+            font-size: $font-size-mobile-footer;
         }
 
         &--link {
-            font-size: 1.3rem;
+            font-size: $font-size-mobile-footer;
         }
     }
 }

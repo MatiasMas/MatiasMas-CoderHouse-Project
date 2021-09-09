@@ -1,0 +1,104 @@
+.main__contact {
+    height: 90vh;
+
+    &--title {
+        margin-top: 50px;
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    }
+
+    &__form {
+        width: 95%;
+
+        &--title {
+            color: white;
+            margin-bottom: 23px;
+            text-align: center;
+        }
+
+        &__fieldset {
+            &--label {
+                color: white;
+            }
+
+            &--input {
+                background-color: $background-black-low-opacity;
+                height: 45px;
+                margin-bottom: 25px;
+                font-size: 1.5rem;
+                color: white;
+                border-color: rgb(63, 62, 62);
+                padding: 30px 30px 30px 25px;
+                transition: all 0.3s;
+
+                &:focus {
+                    background-color: rgba(0, 0, 0, 0.767);
+                    color: white;
+                    transform: scale(1.03, 1.03);
+                }
+            }
+
+            &--select {
+                @extend .main__contact__form__fieldset--input;
+                height: 62px;
+                padding: 0px 0px 0px 26px;
+            }
+
+            &--textarea {
+                @extend .main__contact__form__fieldset--input;
+                height: 180px;
+            }
+
+            &--submit {
+                width: 100%;
+                margin: 0px;
+                margin-top: 30px;
+                height: 60px;
+                font-size: 1.3rem;
+                border-color: rgba(255, 255, 255, 0.315);
+
+                &:hover {
+                    transform: scale(1.05, 1.05);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 40%;
+    }
+
+    .main__contact__form {
+        background-color: rgba(31, 30, 30, 0.584);
+        padding: 80px 60px 80px 60px;
+        margin-bottom: 70px;
+        border-radius: 5px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .footer__contact {
+        margin-top: 40px;
+        height: 5vh;
+    }
+
+    .main__contact__form__contact {
+        margin-top: 20px;
+
+        &--text {
+            font-size: $font-size-mobile-footer;
+        }
+
+        &--link {
+            font-size: $font-size-mobile-footer;
+        }
+    }
+}

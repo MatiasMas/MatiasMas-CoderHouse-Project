@@ -1,0 +1,140 @@
+.main__wishlist {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    &__title {
+        color: white;
+        padding: 15px;
+
+        &--text {
+            font-size: 2.8rem;
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    &__sorting {
+        &--label {
+            color: white;
+            margin-top: 15px;
+            margin-bottom: 10px;
+            font-size: 1.4rem;
+            padding: 0;
+        }
+    }
+
+    @each $game in $games {
+        &__game__#{$game} {
+            height: 160px;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+            // overflow: scroll;
+
+            &--img {
+                padding: 0;
+            }
+
+            &__information {
+                height: 100%;
+                color: white;
+                background-color: rgba(31, 31, 31, 0.584);
+
+                &--name {
+                    height: 30%;
+                    padding: 10px;
+                    font-size: 1.8rem;
+                    align-self: center;
+                    padding-left: 30px;
+                }
+
+                &--description {
+                    padding: 15px;
+                    overflow: hidden;
+                    text-align: justify;
+                    height: 50%;
+                }
+
+                &--price {
+                    padding-top: 5px;
+                    height: 20%;
+                    color: white;
+                    background-color: rgba(0, 81, 255, 0.425);
+                    font-size: $font-size-mobile-footer;
+                    align-self: flex-end;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    &__checkout {
+        &--button {
+            width: 100%;
+            margin: 0px;
+            margin-top: 20px;
+            height: 60px;
+            font-size: 1.3rem;
+            border-color: rgba(255, 255, 255, 0.315);
+
+            &:hover {
+                transform: scale(1.05, 1.05);
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .main__wishlist {
+        justify-content: flex-start;
+
+        &__sorting {
+            width: 30%;
+            margin-bottom: 20px;
+        }
+
+        @each $game in $games {
+            &__game__#{$game} {
+                height: 240px;
+                padding: 0;
+                justify-content: space-around;
+                background-color: rgba(27, 27, 27, 0.473);
+                border-radius: 5px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+
+                &--img {
+                    height: 200px;
+                    width: 150px;
+                }
+
+                &__information {
+                    background-color: rgba(39, 39, 39, 0.273);
+                    border-radius: 5px;
+
+                    &--name {
+                        padding-top: 20px;
+                    }
+
+                    &--description {
+                        padding: 30px;
+                    }
+
+                    &--price {
+                        padding-top: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    .main__wishlist__checkout {
+        &--button {
+            width: 40%;
+            justify-self: center;
+        }
+    }
+}

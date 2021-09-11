@@ -27,3 +27,20 @@
     background-color: rgb(221, 144, 0);
     color: white;
 }
+
+.select {
+    background-color: $background-black-low-opacity;
+    margin-bottom: 25px;
+    font-size: 1.5rem;
+    color: white;
+    border-color: rgb(63, 62, 62);
+    transition: all 0.3s;
+    height: 62px;
+    padding: 0px 0px 0px 26px;
+
+    &:focus {
+        background-color: rgba(0, 0, 0, 0.767);
+        color: white;
+        transform: scale(1.03, 1.03);
+    }
+}

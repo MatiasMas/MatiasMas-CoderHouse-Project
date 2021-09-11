@@ -42,6 +42,20 @@ body {
   background-color: #dd9000;
   color: white; }
 
+.select {
+  background-color: rgba(0, 0, 0, 0.897);
+  margin-bottom: 25px;
+  font-size: 1.5rem;
+  color: white;
+  border-color: #3f3e3e;
+  transition: all 0.3s;
+  height: 62px;
+  padding: 0px 0px 0px 26px; }
+  .select:focus {
+    background-color: rgba(0, 0, 0, 0.767);
+    color: white;
+    transform: scale(1.03, 1.03); }
+
 .header__navbar__mobile--logo {
   height: 50px;
   width: 50px; }
@@ -55,28 +69,6 @@ body {
   position: absolute;
   right: 20px;
   top: 15px; }
-
-.footer {
-  height: 10vh;
-  background-color: black;
-  color: rgba(255, 255, 255, 0.562); }
-
-.carousel__img--mobile {
-  height: 80vh; }
-
-.carousel-inner .carousel-item div.carousel-caption div.game__description {
-  border-radius: 3px;
-  padding: 20px;
-  background-color: rgba(0, 0, 0, 0.514);
-  margin-bottom: 10px; }
-
-#offers__slider {
-  padding: 0;
-  margin: 0; }
-
-.main__home__options--menu {
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.897); }
 
 #offcanvasNavbar {
   background-color: rgba(0, 0, 0, 0.897); }
@@ -100,6 +92,28 @@ body {
 .header__navbar {
   height: 10vh;
   background-color: black; }
+
+.footer {
+  height: 10vh;
+  background-color: black;
+  color: rgba(255, 255, 255, 0.562); }
+
+.carousel__img--mobile {
+  height: 80vh; }
+
+.carousel-inner .carousel-item div.carousel-caption div.game__description {
+  border-radius: 3px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.514);
+  margin-bottom: 10px; }
+
+#offers__slider {
+  padding: 0;
+  margin: 0; }
+
+.main__home__options--menu {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.897); }
 
 .main {
   height: 80vh;
@@ -296,6 +310,195 @@ body {
     .main__register__form__register--link {
       font-size: 1.3rem; } }
 
+.main__wishlist {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%; }
+  .main__wishlist__title {
+    color: white;
+    padding: 15px; }
+    .main__wishlist__title--text {
+      font-size: 2.8rem;
+      margin: 0;
+      padding: 0; }
+  .main__wishlist__sorting--label {
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    padding: 0; }
+  .main__wishlist__game__1 {
+    height: 160px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px; }
+    .main__wishlist__game__1--img {
+      padding: 0; }
+    .main__wishlist__game__1__information {
+      height: 100%;
+      color: white;
+      background-color: rgba(31, 31, 31, 0.584); }
+      .main__wishlist__game__1__information--name {
+        height: 30%;
+        padding: 10px;
+        font-size: 1.8rem;
+        align-self: center;
+        padding-left: 30px; }
+      .main__wishlist__game__1__information--description {
+        padding: 15px;
+        overflow: hidden;
+        text-align: justify;
+        height: 50%; }
+      .main__wishlist__game__1__information--price {
+        padding-top: 5px;
+        height: 20%;
+        color: white;
+        background-color: rgba(0, 81, 255, 0.425);
+        font-size: 1.3rem;
+        align-self: flex-end;
+        text-align: center; }
+  .main__wishlist__game__2 {
+    height: 160px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px; }
+    .main__wishlist__game__2--img {
+      padding: 0; }
+    .main__wishlist__game__2__information {
+      height: 100%;
+      color: white;
+      background-color: rgba(31, 31, 31, 0.584); }
+      .main__wishlist__game__2__information--name {
+        height: 30%;
+        padding: 10px;
+        font-size: 1.8rem;
+        align-self: center;
+        padding-left: 30px; }
+      .main__wishlist__game__2__information--description {
+        padding: 15px;
+        overflow: hidden;
+        text-align: justify;
+        height: 50%; }
+      .main__wishlist__game__2__information--price {
+        padding-top: 5px;
+        height: 20%;
+        color: white;
+        background-color: rgba(0, 81, 255, 0.425);
+        font-size: 1.3rem;
+        align-self: flex-end;
+        text-align: center; }
+  .main__wishlist__game__3 {
+    height: 160px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px; }
+    .main__wishlist__game__3--img {
+      padding: 0; }
+    .main__wishlist__game__3__information {
+      height: 100%;
+      color: white;
+      background-color: rgba(31, 31, 31, 0.584); }
+      .main__wishlist__game__3__information--name {
+        height: 30%;
+        padding: 10px;
+        font-size: 1.8rem;
+        align-self: center;
+        padding-left: 30px; }
+      .main__wishlist__game__3__information--description {
+        padding: 15px;
+        overflow: hidden;
+        text-align: justify;
+        height: 50%; }
+      .main__wishlist__game__3__information--price {
+        padding-top: 5px;
+        height: 20%;
+        color: white;
+        background-color: rgba(0, 81, 255, 0.425);
+        font-size: 1.3rem;
+        align-self: flex-end;
+        text-align: center; }
+  .main__wishlist__checkout--button {
+    width: 100%;
+    margin: 0px;
+    margin-top: 20px;
+    height: 60px;
+    font-size: 1.3rem;
+    border-color: rgba(255, 255, 255, 0.315); }
+    .main__wishlist__checkout--button:hover {
+      transform: scale(1.05, 1.05); }
+
+@media screen and (min-width: 600px) {
+  .main__wishlist {
+    justify-content: flex-start; }
+    .main__wishlist__sorting {
+      width: 30%;
+      margin-bottom: 20px; }
+    .main__wishlist__game__1 {
+      height: 240px;
+      padding: 0;
+      justify-content: space-around;
+      background-color: rgba(27, 27, 27, 0.473);
+      border-radius: 5px;
+      padding-top: 20px;
+      padding-bottom: 20px; }
+      .main__wishlist__game__1--img {
+        height: 200px;
+        width: 150px; }
+      .main__wishlist__game__1__information {
+        background-color: rgba(39, 39, 39, 0.273);
+        border-radius: 5px; }
+        .main__wishlist__game__1__information--name {
+          padding-top: 20px; }
+        .main__wishlist__game__1__information--description {
+          padding: 30px; }
+        .main__wishlist__game__1__information--price {
+          padding-top: 10px; }
+    .main__wishlist__game__2 {
+      height: 240px;
+      padding: 0;
+      justify-content: space-around;
+      background-color: rgba(27, 27, 27, 0.473);
+      border-radius: 5px;
+      padding-top: 20px;
+      padding-bottom: 20px; }
+      .main__wishlist__game__2--img {
+        height: 200px;
+        width: 150px; }
+      .main__wishlist__game__2__information {
+        background-color: rgba(39, 39, 39, 0.273);
+        border-radius: 5px; }
+        .main__wishlist__game__2__information--name {
+          padding-top: 20px; }
+        .main__wishlist__game__2__information--description {
+          padding: 30px; }
+        .main__wishlist__game__2__information--price {
+          padding-top: 10px; }
+    .main__wishlist__game__3 {
+      height: 240px;
+      padding: 0;
+      justify-content: space-around;
+      background-color: rgba(27, 27, 27, 0.473);
+      border-radius: 5px;
+      padding-top: 20px;
+      padding-bottom: 20px; }
+      .main__wishlist__game__3--img {
+        height: 200px;
+        width: 150px; }
+      .main__wishlist__game__3__information {
+        background-color: rgba(39, 39, 39, 0.273);
+        border-radius: 5px; }
+        .main__wishlist__game__3__information--name {
+          padding-top: 20px; }
+        .main__wishlist__game__3__information--description {
+          padding: 30px; }
+        .main__wishlist__game__3__information--price {
+          padding-top: 10px; }
+  .main__wishlist__checkout--button {
+    width: 40%;
+    justify-self: center; } }
+
 .main__contact {
   height: 90vh; }
   .main__contact--title {
@@ -311,7 +514,7 @@ body {
       text-align: center; }
     .main__contact__form__fieldset--label {
       color: white; }
-    .main__contact__form__fieldset--input, .main__contact__form__fieldset--select, .main__contact__form__fieldset--textarea {
+    .main__contact__form__fieldset--input, .main__contact__form__fieldset--textarea {
       background-color: rgba(0, 0, 0, 0.897);
       height: 45px;
       margin-bottom: 25px;
@@ -320,13 +523,10 @@ body {
       border-color: #3f3e3e;
       padding: 30px 30px 30px 25px;
       transition: all 0.3s; }
-      .main__contact__form__fieldset--input:focus, .main__contact__form__fieldset--select:focus, .main__contact__form__fieldset--textarea:focus {
+      .main__contact__form__fieldset--input:focus, .main__contact__form__fieldset--textarea:focus {
         background-color: rgba(0, 0, 0, 0.767);
         color: white;
         transform: scale(1.03, 1.03); }
-    .main__contact__form__fieldset--select {
-      height: 62px;
-      padding: 0px 0px 0px 26px; }
     .main__contact__form__fieldset--textarea {
       height: 180px; }
     .main__contact__form__fieldset--submit {

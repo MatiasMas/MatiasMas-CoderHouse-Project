@@ -41,12 +41,6 @@
                 }
             }
 
-            &--select {
-                @extend .main__contact__form__fieldset--input;
-                height: 62px;
-                padding: 0px 0px 0px 26px;
-            }
-
             &--textarea {
                 @extend .main__contact__form__fieldset--input;
                 height: 180px;

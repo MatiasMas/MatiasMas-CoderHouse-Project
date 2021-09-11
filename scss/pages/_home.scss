@@ -25,37 +25,6 @@
     background-color: $background-black-low-opacity;
 }
 
-#offcanvasNavbar {
-    background-color: $background-black-low-opacity;
-}
-
-.close__swipe__button {
-    height: 50px;
-    width: 50px;
-}
-
-.menu__options {
-    li {
-        width: 200px;
-        text-align: center;
-    }
-}
-
-.loginRegister__options {
-    background-color: $background-orange-low-opacity;
-    border-radius: 4px;
-}
-
-.sidebar__options {
-    background-color: $background-orange-low-opacity;
-    border-radius: 4px;
-}
-
-.header__navbar {
-    height: 10vh;
-    background-color: black;
-}
-
 .main {
     height: 80vh;
     background-color: black;

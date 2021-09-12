@@ -15,3 +15,4 @@ Change log:
 -   1.4.0 : Arreglando un bug donde se generaba scroll en las paginas de registro y de contacto, creando la pagina de contacto siguiendo mismos estilos que pagina de login y registro.
 -   1.5.0 : Reorganizando scss de la home al header, haciendo por completo la pagina de wishlist para que sea responsive.
 -   1.6.0 : Trabajando en la pagina de busqueda, falta aun trabajarla mas en especial desktop.
+-   1.6.1 : Colocando etiquetas para SEO, keywords y descriptions fueron añadidas a todas las páginas.

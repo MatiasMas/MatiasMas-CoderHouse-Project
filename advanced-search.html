@@ -4,97 +4,164 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MatGames | Search</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>MatGames | Advanced Search</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/styles.css"/>
 </head>
-<body>
-    <header>
-        <a href="index.html"><img class="mat-games-logo" src="https://w7.pngwing.com/pngs/751/102/png-transparent-joystick-game-controllers-video-game-computer-icons-gamepad-electronics-rectangle-logo.png" alt="Company-Icon"/></a>
-        <a href="login.html"><input type="button" value="Login" /></a>
-        <a href="register.html"><input type="button" value="Register" /></a>
-    </header>
-    <main>
-        <!-- Search bar -->
-        <section>
-            <p><strong>Search</strong></p>
-            <input type="text" name="term-to-search" placeholder="Please search for a game title...">
-            <input type="button" value="Search">
-        </section>
-        <!-- Filters -->
-        <section>
-            <p><strong>Filters</strong></p>
-            <ul class="no-bullets">
-                <li><button>Action</button></li>
-                <li><button>Adventure</button></li>
-                <li><button>Strategy</button></li>
-                <li><button>Puzzle</button></li>
-                <li><button>Terror</button></li>
-                <li><button>Shooter</button></li>
-                <li><button>Multiplayer</button></li>
-                <li><button>Kids</button></li>
-                <li><button>RPG</button></li>
-                <li><button>Turn-Based</button></li>
-            </ul>
-        </section>
-        <!-- Featured games -->
-        <section id="featured-games">
-            <h2>Featured Games</h2>
-            <article>
-                <img src="images/Doctorwho.jpeg" alt="Doctor Who" width="250" height="380">
-                <p>Doctor Who</p>
-                <p>Kaigan Games</p>
-                <p>USD 10</p>
+    <body class="container">
+        <!-- Header with the log in and register options -->
+        <header class="header row">
+            <nav class="header__navbar navbar navbar-dark">
+                <!-- Navbar mobile -->
+                <div class="header__navbar__mobile container-fluid d-md-none d-flex align-items-center">
+                <a class="header__navbar__mobile--link navbar-brand" href="index.html">
+                    <img class="header__navbar__mobile--logo" src="images/logo.png" alt="">
+                </a>
+                <h3 class="header__navbar__mobile--title text-white">MatGames</h3>
+                <button class="header__navbar__mobile--hamburger navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="header__navbar__mobile--slider offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="close__swipe__button offcanvas-header">
+                    <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body d-flex align-items-center flex-column justify-content-evenly">
+                        <div class="loginRegister__options p-5">
+                            <ul class="menu__options m-0 p-0">
+                                <li class="button nav-item">
+                                    <a class="nav-link btn text-white" aria-current="page" href="login.html">Login</a>
+                                </li>
+                                <li class="button nav-item">
+                                    <a class="nav-link btn text-white" aria-current="page" href="register.html">Register</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="sidebar__options p-5">
+                            <ul class="menu__options navbar-nav d-flex align-items-center justify-content-center flex-grow-1">
+                                <li class="button nav-item">
+                                    <a class="nav-link btn text-white" aria-current="page" href="advanced-search.html">Search</a>
+                                </li>
+                                <li class="button nav-item">
+                                    <a class="nav-link text-white" href="advanced-search.html#featured-games">Discover</a>
+                                </li>
+                                <li class="button nav-item">
+                                    <a class="nav-link text-white" href="wishlist.html">Wishlist</a>
+                                </li>
+                                <li class="button nav-item">
+                                    <a class="nav-link text-white" href="contact.html">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <!-- Navbar desktop -->
+                <div class="header__navbar__desktop container-fluid d-none d-md-block">
+                    <a class="header__navbar__desktop--link" href="index.html">
+                        <img class="header__navbar__desktop--logo" src="images/logo.png" alt="Company-Icon"/>
+                    </a>
+                    <div class="header__navbar__desktop--buttons">
+                        <a href="login.html"><input class="button" type="button" value="Login" /></a>
+                        <a href="register.html"><input class="button" type="button" value="Register" /></a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main class="main__search row">
+            <div class="main__search__title row">
+                <h1 class="main__search__title--text">Search</h1>
+            </div>
+            <hr style="color: white;">
+            <!-- Search bar -->
+            <section class="main__search__searchBar row">
+                <input class="main__search__searchBar--field form-control" type="text" name="term-to-search" placeholder="Please search for a game title...">
+                <input class="main__search__searchBar--button button" type="button" value="Search">
+            </section>
+            <!-- Filters -->
+            <section class="main__search__filters row">
+                <button class="main__search__filters--button btn button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsableFilters" aria-expanded="false" aria-controls="collapsableFilters">Filters</button>
+                <div class="collapse" id="collapsableFilters">
+                    <div class="main__search__filters__card card card-body d-flex justify-content-center align-items-center">
+                        <ul class="main__search__filters__card__options p-0 m-0">
+                            <li class="main__search__filters__card__options--item"><button>Action</button></li>
+                            <li class="main__search__filters__card__options--item"><button>Adventure</button></li>
+                            <li class="main__search__filters__card__options--item"><button>Strategy</button></li>
+                            <li class="main__search__filters__card__options--item"><button>Puzzle</button></li>
+                            <li class="main__search__filters__card__options--item"><button>Terror</button></li>
+                            <li class="main__search__filters__card__options--item"><button>Shooter</button></li>
+                            <li class="main__search__filters__card__options--item"><button>Multiplayer</button></li>
+                            <li class="main__search__filters__card__options--item"><button>Kids</button></li>
+                            <li class="main__search__filters__card__options--item"><button>RPG</button></li>
+                            <li class="main__search__filters__card__options--item"><button>Turn-Based</button></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- Featured games -->
+            <section class="main__search__featured row" id="featured-games">
+                <h2 class="main__search__featured--label">Featured Games</h2>
+                <article class="main__search__featured__game__1 col-6 col-md-4">
+                    <img class="main__search__featured__game__1--img" src="images/Doctorwho.jpeg" alt="Doctor Who">
+                    <div class="main__search__featured__game__1__information">
+                        <p class="main__search__featured__game__1__information--name">Doctor Who</>
+                        <p class="main__search__featured__game__1__information--developer">Kaigan Games</p>
+                        <button type="button" class="main__search__featured__game__1__information--price btn">USD 10</>
+                    </div>
+                </article>
+                <article class="main__search__featured__game__2 col-6 col-md-4">
+                    <img class="main__search__featured__game__2--img" src="images/horizon.webp" alt="Horizon Zero Dawn">
+                    <div class="main__search__featured__game__2__information">
+                        <p class="main__search__featured__game__2__information--name">Horizon</p>
+                        <p class="main__search__featured__game__2__information--developer">Intrepid Games</p>
+                        <button type="button" class="main__search__featured__game__2__information--price btn">USD 20</>
+                    </div>
+                </article>
+                <article class="main__search__featured__game__3 col-6 col-md-4 d-none d-md-block">
+                    <img class="main__search__featured__game__3--img" src="images/horizon.webp" alt="Horizon Zero Dawn">
+                    <div class="main__search__featured__game__3__information">
+                        <p class="main__search__featured__game__3__information--name">Horizon</p>
+                        <p class="main__search__featured__game__3__information--developer">Intrepid Games</p>
+                        <button type="button" class="main__search__featured__game__3__information--price btn">USD 20</>
+                    </div>
+                </article>
+            </section>
+            <!-- Selected by the community -->
+            <section class="main__search__community row">
+                <h2 class="main__search__community--label">Selected by the Community</h2>
+                <article class="main__search__community__game__1 col-6 col-md-4">
+                    <img class="main__search__community__game__1--img" src="images/Doctorwho.jpeg" alt="Doctor Who">
+                    <div class="main__search__community__game__1__information">
+                        <p class="main__search__community__game__1__information--name">Doctor Who</>
+                        <p class="main__search__community__game__1__information--developer">Kaigan Games</p>
+                        <button type="button" class="main__search__community__game__1__information--price btn">USD 10</>
+                    </div>
+                </article>
+                <article class="main__search__community__game__2 col-6 col-md-4">
+                    <img class="main__search__community__game__2--img" src="images/horizon.webp" alt="Horizon Zero Dawn">
+                    <div class="main__search__community__game__2__information">
+                        <p class="main__search__community__game__2__information--name">Horizon</p>
+                        <p class="main__search__community__game__2__information--developer">Intrepid Games</p>
+                        <button type="button" class="main__search__community__game__2__information--price btn">USD 20</>
+                    </div>
+                </article>
             </article>
-            <article>
-                <img src="images/hellisotherdemons.jpeg" alt="Doctor Who" width="250" height="380">
-                <p>Hell Is Other Demons</p>
-                <p>Another Games</p>
-                <p>USD 10</p>
+            <article class="main__search__community__game__3 col-6 col-md-4 d-none d-md-block">
+                <img class="main__search__community__game__3--img" src="images/horizon.webp" alt="Horizon Zero Dawn">
+                <div class="main__search__community__game__3__information">
+                    <p class="main__search__community__game__3__information--name">Horizon</p>
+                    <p class="main__search__community__game__3__information--developer">Intrepid Games</p>
+                    <button type="button" class="main__search__community__game__3__information--price btn">USD 20</>
+                </div>
             </article>
-            <article>
-                <img src="images/Doctorwho.jpeg" alt="Doctor Who" width="250" height="380">
-                <p>Doctor Who</p>
-                <p>Kaigan Games</p>
-                <p>USD 10</p>
-            </article>
-            <article>
-                <img src="images/hellisotherdemons.jpeg" alt="Doctor Who" width="250" height="380">
-                <p>Hell Is Other Demons</p>
-                <p>Another Games</p>
-                <p>USD 10</p>
-            </article>
-        </section>
-        <!-- Selected by the community -->
-        <section>
-            <h2>Selected by the Community</h2>
-            <article>
-                <img src="images/Doctorwho.jpeg" alt="Doctor Who" width="250px" height="px380">
-                <p>Doctor Who</p>
-                <p>Kaigan Games</p>
-                <p>USD 10</p>
-            </article>
-            <article>
-                <img src="images/hellisotherdemons.jpeg" alt="Hell Is Other Demons" width="250px" height="380px">
-                <p>Hell Is Other Demons</p>
-                <p>Another Games</p>
-                <p>USD 10</p>
-            </article>
-            <article>
-                <img src="images/Doctorwho.jpeg" alt="Doctor Who" width="250px" height="380px">
-                <p>Doctor Who</p>
-                <p>Kaigan Games</p>
-                <p>USD 10</p>
-            </article>
-            <article>
-                <img src="images/hellisotherdemons.jpeg" alt="Hell Is Other Demons" width="250px" height="380px">
-                <p>Hell Is Other Demons</p>
-                <p>Another Games</p>
-                <p>USD 10</p>
-            </article>
-        </section>
-    </main>
-    <footer>
-        <p>All rights reserved - Matias M 2021</p>
-    </footer>
-</body>
+            </section>
+        </main>
+        <footer class="footer__search footer row">
+            <p class="footer__search--text d-flex justify-content-center align-items-center">All rights reserved - Matias M 2021</p>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    </body>
 </html>

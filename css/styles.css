@@ -17,7 +17,7 @@ body {
     opacity: 1; } }
 
 /* Button default styles */
-.button {
+.button, .main__search__filters__card__options--item button {
   padding: 10px 15px;
   text-transform: uppercase;
   margin: 5px;
@@ -30,15 +30,15 @@ body {
   transition: all 0.5s; }
 
 /* Button properties */
-.button:hover {
+.button:hover, .main__search__filters__card__options--item button:hover {
   background-color: orange;
   transform: scale(1.2, 1.2); }
 
-.button:visited {
+.button:visited, .main__search__filters__card__options--item button:visited {
   background-color: black;
   color: white; }
 
-.button:active {
+.button:active, .main__search__filters__card__options--item button:active {
   background-color: #dd9000;
   color: white; }
 
@@ -498,6 +498,237 @@ body {
   .main__wishlist__checkout--button {
     width: 40%;
     justify-self: center; } }
+
+.main__search {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%; }
+  .main__search__title {
+    color: white;
+    padding: 15px; }
+    .main__search__title--text {
+      font-size: 2.8rem;
+      margin: 0;
+      padding: 0; }
+  .main__search__searchBar--field {
+    background-color: rgba(0, 0, 0, 0.897);
+    height: 45px;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    color: white;
+    border-color: #3f3e3e;
+    padding: 30px 30px 30px 25px;
+    transition: all 0.3s; }
+    .main__search__searchBar--field:focus {
+      background-color: rgba(0, 0, 0, 0.767);
+      color: white;
+      transform: scale(1.03, 1.03); }
+  .main__search__searchBar--button {
+    width: 100%;
+    margin: 0px;
+    height: 40px;
+    font-size: 1.3rem;
+    border-color: rgba(255, 255, 255, 0.315); }
+    .main__search__searchBar--button:hover {
+      transform: scale(1.05, 1.05); }
+  .main__search__filters {
+    margin-top: 22px; }
+    .main__search__filters--button {
+      margin: 0;
+      background-color: rgba(66, 66, 138, 0.74);
+      font-size: 2rem;
+      margin-bottom: 15px;
+      border-color: #3f3e3e;
+      width: 100%; }
+      .main__search__filters--button:hover {
+        transform: scale(1.05, 1.05);
+        background-color: rgba(93, 93, 187, 0.74);
+        color: white; }
+    .main__search__filters__card {
+      background-color: rgba(39, 39, 39, 0.377); }
+      .main__search__filters__card__options {
+        width: 100%;
+        list-style: none; }
+        .main__search__filters__card__options--item button {
+          border-color: #3f3e3e;
+          margin: 0;
+          padding: 10px;
+          margin-bottom: 5px;
+          width: 100%; }
+          .main__search__filters__card__options--item button:hover {
+            transform: scale(1.05, 1.05); }
+  .main__search__featured {
+    width: 100%; }
+    .main__search__featured--label {
+      color: white;
+      font-size: 2rem;
+      margin-top: 15px;
+      margin-bottom: 10px; }
+    .main__search__featured__game__1--img {
+      height: 210px;
+      width: 100%; }
+    .main__search__featured__game__1__information {
+      background-color: rgba(53, 53, 53, 0.411);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      .main__search__featured__game__1__information--name {
+        color: white;
+        font-size: 1.4rem;
+        padding-top: 3px; }
+      .main__search__featured__game__1__information--developer {
+        color: rgba(255, 255, 255, 0.788); }
+      .main__search__featured__game__1__information--price {
+        text-align: center;
+        padding-bottom: 2px;
+        color: white;
+        border: 1px solid rgba(0, 0, 0, 0.425);
+        background-color: rgba(255, 166, 0, 0.274);
+        width: 100%; }
+    .main__search__featured__game__2--img {
+      height: 210px;
+      width: 100%; }
+    .main__search__featured__game__2__information {
+      background-color: rgba(53, 53, 53, 0.411);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      .main__search__featured__game__2__information--name {
+        color: white;
+        font-size: 1.4rem;
+        padding-top: 3px; }
+      .main__search__featured__game__2__information--developer {
+        color: rgba(255, 255, 255, 0.788); }
+      .main__search__featured__game__2__information--price {
+        text-align: center;
+        padding-bottom: 2px;
+        color: white;
+        border: 1px solid rgba(0, 0, 0, 0.425);
+        background-color: rgba(255, 166, 0, 0.274);
+        width: 100%; }
+    .main__search__featured__game__3--img {
+      height: 210px;
+      width: 100%; }
+    .main__search__featured__game__3__information {
+      background-color: rgba(53, 53, 53, 0.411);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      .main__search__featured__game__3__information--name {
+        color: white;
+        font-size: 1.4rem;
+        padding-top: 3px; }
+      .main__search__featured__game__3__information--developer {
+        color: rgba(255, 255, 255, 0.788); }
+      .main__search__featured__game__3__information--price {
+        text-align: center;
+        padding-bottom: 2px;
+        color: white;
+        border: 1px solid rgba(0, 0, 0, 0.425);
+        background-color: rgba(255, 166, 0, 0.274);
+        width: 100%; }
+  .main__search__community {
+    width: 100%; }
+    .main__search__community--label {
+      color: white;
+      font-size: 2rem;
+      margin-top: 20px;
+      margin-bottom: 14px; }
+    .main__search__community__game__1--img {
+      height: 210px;
+      width: 100%; }
+    .main__search__community__game__1__information {
+      background-color: rgba(53, 53, 53, 0.411);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      .main__search__community__game__1__information--name {
+        color: white;
+        font-size: 1.4rem;
+        padding-top: 3px; }
+      .main__search__community__game__1__information--developer {
+        color: rgba(255, 255, 255, 0.788); }
+      .main__search__community__game__1__information--price {
+        text-align: center;
+        padding-bottom: 2px;
+        color: white;
+        border: 1px solid rgba(0, 0, 0, 0.425);
+        background-color: rgba(255, 166, 0, 0.274);
+        width: 100%; }
+    .main__search__community__game__2--img {
+      height: 210px;
+      width: 100%; }
+    .main__search__community__game__2__information {
+      background-color: rgba(53, 53, 53, 0.411);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      .main__search__community__game__2__information--name {
+        color: white;
+        font-size: 1.4rem;
+        padding-top: 3px; }
+      .main__search__community__game__2__information--developer {
+        color: rgba(255, 255, 255, 0.788); }
+      .main__search__community__game__2__information--price {
+        text-align: center;
+        padding-bottom: 2px;
+        color: white;
+        border: 1px solid rgba(0, 0, 0, 0.425);
+        background-color: rgba(255, 166, 0, 0.274);
+        width: 100%; }
+    .main__search__community__game__3--img {
+      height: 210px;
+      width: 100%; }
+    .main__search__community__game__3__information {
+      background-color: rgba(53, 53, 53, 0.411);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      .main__search__community__game__3__information--name {
+        color: white;
+        font-size: 1.4rem;
+        padding-top: 3px; }
+      .main__search__community__game__3__information--developer {
+        color: rgba(255, 255, 255, 0.788); }
+      .main__search__community__game__3__information--price {
+        text-align: center;
+        padding-bottom: 2px;
+        color: white;
+        border: 1px solid rgba(0, 0, 0, 0.425);
+        background-color: rgba(255, 166, 0, 0.274);
+        width: 100%; }
+
+@media screen and (min-width: 600px) {
+  .main__search__featured {
+    width: 80%; }
+    .main__search__featured__game__1--img {
+      height: 400px;
+      width: 100%; }
+    .main__search__featured__game__2--img {
+      height: 400px;
+      width: 100%; }
+    .main__search__featured__game__3--img {
+      height: 400px;
+      width: 100%; }
+  .main__search__community {
+    width: 80%; }
+    .main__search__community__game__1--img {
+      height: 400px;
+      width: 100%; }
+    .main__search__community__game__2--img {
+      height: 400px;
+      width: 100%; }
+    .main__search__community__game__3--img {
+      height: 400px;
+      width: 100%; } }
 
 .main__contact {
   height: 90vh; }

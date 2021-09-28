@@ -1,3 +1,11 @@
+.wishlist {
+    &_body {
+        background-image: url(../../images/background8bit.gif);
+        background-repeat: repeat-y;
+        background-size: cover;
+    }
+}
+
 .main__wishlist {
     margin: 0;
     padding: 0;
@@ -32,7 +40,6 @@
             display: flex;
             justify-content: space-between;
             margin-bottom: 30px;
-            // overflow: scroll;
 
             &--img {
                 padding: 0;
@@ -62,10 +69,17 @@
                     padding-top: 5px;
                     height: 20%;
                     color: white;
-                    background-color: rgba(0, 81, 255, 0.425);
+                    background-color: rgba(255, 166, 0, 0.692);
                     font-size: $font-size-mobile-footer;
                     align-self: flex-end;
                     text-align: center;
+                    font-weight: bold;
+                    transition: all 0.3s;
+
+                    &:hover {
+                        background-color: rgba(0, 81, 255, 0.712);
+                        transform: scale(1.02, 1.02);
+                    }
                 }
             }
         }

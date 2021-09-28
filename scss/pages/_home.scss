@@ -1,3 +1,11 @@
+.home {
+    &_body {
+        background-image: url(../../images/background8bit.gif);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
 .carousel__img--mobile {
     height: 80vh;
 }
@@ -20,14 +28,25 @@
     margin: 0;
 }
 
-.main__home__options--menu {
-    text-align: center;
-    background-color: $background-black-low-opacity;
+.main__home__options {
+    &--menu {
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0);
+        width: 75%;
+    }
+
+    &--item {
+        height: 50px;
+        width: 100%;
+
+        & a {
+            font-size: 13px;
+        }
+    }
 }
 
 .main {
     height: 80vh;
-    background-color: black;
 }
 
 /* Aligning everything to center */

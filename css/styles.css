@@ -91,12 +91,17 @@ body {
 
 .header__navbar {
   height: 10vh;
-  background-color: black; }
+  background-color: rgba(0, 0, 0, 0); }
 
 .footer {
   height: 10vh;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0);
   color: rgba(255, 255, 255, 0.562); }
+
+.home_body {
+  background-image: url(../../images/background8bit.gif);
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 .carousel__img--mobile {
   height: 80vh; }
@@ -113,11 +118,17 @@ body {
 
 .main__home__options--menu {
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.897); }
+  background-color: rgba(0, 0, 0, 0);
+  width: 75%; }
+
+.main__home__options--item {
+  height: 50px;
+  width: 100%; }
+  .main__home__options--item a {
+    font-size: 13px; }
 
 .main {
-  height: 80vh;
-  background-color: black; }
+  height: 80vh; }
 
 /* Aligning everything to center */
 .main__home {
@@ -153,6 +164,11 @@ body {
 .sliderBottom {
   text-align: center;
   width: 100%; }
+
+.login_body {
+  background-image: url(../../images/background8bit.gif);
+  background-repeat: repeat-y;
+  background-size: cover; }
 
 .main__login {
   height: 90vh; }
@@ -224,6 +240,11 @@ body {
     padding: 80px 60px 80px 60px;
     margin-bottom: 70px;
     border-radius: 5px; } }
+
+.register_body {
+  background-image: url(../../images/background8bit.gif);
+  background-repeat: repeat-y;
+  background-size: cover; }
 
 .main__register {
   height: 90vh; }
@@ -310,6 +331,11 @@ body {
     .main__register__form__register--link {
       font-size: 1.3rem; } }
 
+.wishlist_body {
+  background-image: url(../../images/background8bit.gif);
+  background-repeat: repeat-y;
+  background-size: cover; }
+
 .main__wishlist {
   margin: 0;
   padding: 0;
@@ -355,10 +381,15 @@ body {
         padding-top: 5px;
         height: 20%;
         color: white;
-        background-color: rgba(0, 81, 255, 0.425);
+        background-color: rgba(255, 166, 0, 0.692);
         font-size: 1.3rem;
         align-self: flex-end;
-        text-align: center; }
+        text-align: center;
+        font-weight: bold;
+        transition: all 0.3s; }
+        .main__wishlist__game__1__information--price:hover {
+          background-color: rgba(0, 81, 255, 0.712);
+          transform: scale(1.02, 1.02); }
   .main__wishlist__game__2 {
     height: 160px;
     display: flex;
@@ -385,10 +416,15 @@ body {
         padding-top: 5px;
         height: 20%;
         color: white;
-        background-color: rgba(0, 81, 255, 0.425);
+        background-color: rgba(255, 166, 0, 0.692);
         font-size: 1.3rem;
         align-self: flex-end;
-        text-align: center; }
+        text-align: center;
+        font-weight: bold;
+        transition: all 0.3s; }
+        .main__wishlist__game__2__information--price:hover {
+          background-color: rgba(0, 81, 255, 0.712);
+          transform: scale(1.02, 1.02); }
   .main__wishlist__game__3 {
     height: 160px;
     display: flex;
@@ -415,10 +451,15 @@ body {
         padding-top: 5px;
         height: 20%;
         color: white;
-        background-color: rgba(0, 81, 255, 0.425);
+        background-color: rgba(255, 166, 0, 0.692);
         font-size: 1.3rem;
         align-self: flex-end;
-        text-align: center; }
+        text-align: center;
+        font-weight: bold;
+        transition: all 0.3s; }
+        .main__wishlist__game__3__information--price:hover {
+          background-color: rgba(0, 81, 255, 0.712);
+          transform: scale(1.02, 1.02); }
   .main__wishlist__checkout--button {
     width: 100%;
     margin: 0px;
@@ -499,6 +540,11 @@ body {
     width: 40%;
     justify-self: center; } }
 
+.advanced_body {
+  background-image: url(../../images/background8bit.gif);
+  background-repeat: repeat-y;
+  background-size: cover; }
+
 .main__search {
   margin: 0;
   padding: 0;
@@ -570,7 +616,7 @@ body {
       height: 210px;
       width: 100%; }
     .main__search__featured__game__1__information {
-      background-color: rgba(53, 53, 53, 0.411);
+      background-color: rgba(53, 53, 53, 0.877);
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -582,17 +628,24 @@ body {
       .main__search__featured__game__1__information--developer {
         color: rgba(255, 255, 255, 0.788); }
       .main__search__featured__game__1__information--price {
+        height: 32px;
         text-align: center;
         padding-bottom: 2px;
         color: white;
         border: 1px solid rgba(0, 0, 0, 0.425);
-        background-color: rgba(255, 166, 0, 0.274);
-        width: 100%; }
+        background-color: rgba(255, 166, 0, 0.705);
+        width: 100%;
+        font-weight: bold;
+        transition: all 0.3s; }
+        .main__search__featured__game__1__information--price:hover {
+          transform: scale(1.03, 1.03);
+          background-color: rgba(0, 81, 255, 0.712);
+          color: white; }
     .main__search__featured__game__2--img {
       height: 210px;
       width: 100%; }
     .main__search__featured__game__2__information {
-      background-color: rgba(53, 53, 53, 0.411);
+      background-color: rgba(53, 53, 53, 0.877);
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -604,17 +657,24 @@ body {
       .main__search__featured__game__2__information--developer {
         color: rgba(255, 255, 255, 0.788); }
       .main__search__featured__game__2__information--price {
+        height: 32px;
         text-align: center;
         padding-bottom: 2px;
         color: white;
         border: 1px solid rgba(0, 0, 0, 0.425);
-        background-color: rgba(255, 166, 0, 0.274);
-        width: 100%; }
+        background-color: rgba(255, 166, 0, 0.705);
+        width: 100%;
+        font-weight: bold;
+        transition: all 0.3s; }
+        .main__search__featured__game__2__information--price:hover {
+          transform: scale(1.03, 1.03);
+          background-color: rgba(0, 81, 255, 0.712);
+          color: white; }
     .main__search__featured__game__3--img {
       height: 210px;
       width: 100%; }
     .main__search__featured__game__3__information {
-      background-color: rgba(53, 53, 53, 0.411);
+      background-color: rgba(53, 53, 53, 0.877);
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -626,12 +686,19 @@ body {
       .main__search__featured__game__3__information--developer {
         color: rgba(255, 255, 255, 0.788); }
       .main__search__featured__game__3__information--price {
+        height: 32px;
         text-align: center;
         padding-bottom: 2px;
         color: white;
         border: 1px solid rgba(0, 0, 0, 0.425);
-        background-color: rgba(255, 166, 0, 0.274);
-        width: 100%; }
+        background-color: rgba(255, 166, 0, 0.705);
+        width: 100%;
+        font-weight: bold;
+        transition: all 0.3s; }
+        .main__search__featured__game__3__information--price:hover {
+          transform: scale(1.03, 1.03);
+          background-color: rgba(0, 81, 255, 0.712);
+          color: white; }
   .main__search__community {
     width: 100%; }
     .main__search__community--label {
@@ -643,7 +710,7 @@ body {
       height: 210px;
       width: 100%; }
     .main__search__community__game__1__information {
-      background-color: rgba(53, 53, 53, 0.411);
+      background-color: rgba(53, 53, 53, 0.877);
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -655,17 +722,24 @@ body {
       .main__search__community__game__1__information--developer {
         color: rgba(255, 255, 255, 0.788); }
       .main__search__community__game__1__information--price {
+        height: 32px;
         text-align: center;
         padding-bottom: 2px;
         color: white;
         border: 1px solid rgba(0, 0, 0, 0.425);
-        background-color: rgba(255, 166, 0, 0.274);
-        width: 100%; }
+        background-color: rgba(255, 166, 0, 0.582);
+        width: 100%;
+        font-weight: bold;
+        transition: all 0.3s; }
+        .main__search__community__game__1__information--price:hover {
+          transform: scale(1.03, 1.03);
+          background-color: rgba(0, 81, 255, 0.712);
+          color: white; }
     .main__search__community__game__2--img {
       height: 210px;
       width: 100%; }
     .main__search__community__game__2__information {
-      background-color: rgba(53, 53, 53, 0.411);
+      background-color: rgba(53, 53, 53, 0.877);
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -677,17 +751,24 @@ body {
       .main__search__community__game__2__information--developer {
         color: rgba(255, 255, 255, 0.788); }
       .main__search__community__game__2__information--price {
+        height: 32px;
         text-align: center;
         padding-bottom: 2px;
         color: white;
         border: 1px solid rgba(0, 0, 0, 0.425);
-        background-color: rgba(255, 166, 0, 0.274);
-        width: 100%; }
+        background-color: rgba(255, 166, 0, 0.582);
+        width: 100%;
+        font-weight: bold;
+        transition: all 0.3s; }
+        .main__search__community__game__2__information--price:hover {
+          transform: scale(1.03, 1.03);
+          background-color: rgba(0, 81, 255, 0.712);
+          color: white; }
     .main__search__community__game__3--img {
       height: 210px;
       width: 100%; }
     .main__search__community__game__3__information {
-      background-color: rgba(53, 53, 53, 0.411);
+      background-color: rgba(53, 53, 53, 0.877);
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -699,12 +780,19 @@ body {
       .main__search__community__game__3__information--developer {
         color: rgba(255, 255, 255, 0.788); }
       .main__search__community__game__3__information--price {
+        height: 32px;
         text-align: center;
         padding-bottom: 2px;
         color: white;
         border: 1px solid rgba(0, 0, 0, 0.425);
-        background-color: rgba(255, 166, 0, 0.274);
-        width: 100%; }
+        background-color: rgba(255, 166, 0, 0.582);
+        width: 100%;
+        font-weight: bold;
+        transition: all 0.3s; }
+        .main__search__community__game__3__information--price:hover {
+          transform: scale(1.03, 1.03);
+          background-color: rgba(0, 81, 255, 0.712);
+          color: white; }
 
 @media screen and (min-width: 600px) {
   .main__search__featured {
@@ -729,6 +817,11 @@ body {
     .main__search__community__game__3--img {
       height: 400px;
       width: 100%; } }
+
+.contact_body {
+  background-image: url(../../images/background8bit.gif);
+  background-repeat: repeat-y;
+  background-size: cover; }
 
 .main__contact {
   height: 90vh; }

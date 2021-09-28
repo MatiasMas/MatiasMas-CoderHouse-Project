@@ -17,3 +17,4 @@ Change log:
 -   1.6.0 : Trabajando en la pagina de busqueda, falta aun trabajarla mas en especial desktop.
 -   1.6.1 : Colocando etiquetas para SEO, keywords y descriptions fueron añadidas a todas las páginas.
 -   1.6.2 : Trabajando en detalles genericos, adaptando el background para ambas resoluciones.
+-   1.6.3 : Cambiando los lorem ipsum por descripciones reales de los juegos en la pagina de wishlist.

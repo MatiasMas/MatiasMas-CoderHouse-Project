@@ -166,7 +166,7 @@ body {
   width: 100%; }
 
 .login_body {
-  background-image: url("../../images/background8bit.gif");
+  background-image: url("../images/background8bit.gif");
   background-repeat: repeat-y;
   background-size: cover; }
 
@@ -242,7 +242,7 @@ body {
     border-radius: 5px; } }
 
 .register_body {
-  background-image: url("../../images/background8bit.gif");
+  background-image: url("../images/background8bit.gif");
   background-repeat: repeat-y;
   background-size: cover; }
 
@@ -332,7 +332,7 @@ body {
       font-size: 1.3rem; } }
 
 .wishlist_body {
-  background-image: url("../../images/background8bit.gif");
+  background-image: url("../images/background8bit.gif");
   background-repeat: repeat-y;
   background-size: cover; }
 
@@ -541,7 +541,7 @@ body {
     justify-self: center; } }
 
 .advanced_body {
-  background-image: url("../../images/background8bit.gif");
+  background-image: url("../images/background8bit.gif");
   background-repeat: repeat-y;
   background-size: cover; }
 
@@ -819,7 +819,7 @@ body {
       width: 100%; } }
 
 .contact_body {
-  background-image: url("../../images/background8bit.gif");
+  background-image: url("../images/background8bit.gif");
   background-repeat: repeat-y;
   background-size: cover; }
 

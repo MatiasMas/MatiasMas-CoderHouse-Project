@@ -99,7 +99,7 @@ body {
   color: rgba(255, 255, 255, 0.562); }
 
 .home_body {
-  background-image: url(../../images/background8bit.gif);
+  background-image: url("../images/background8bit.gif");
   background-repeat: no-repeat;
   background-size: cover; }
 

@@ -19,3 +19,4 @@ Change log:
 -   1.6.2 : Trabajando en detalles genericos, adaptando el background para ambas resoluciones.
 -   1.6.3 : Cambiando los lorem ipsum por descripciones reales de los juegos en la pagina de wishlist.
 -   1.6.4 : Borrando imagenes innecesarias.
+-   1.6.5 : Modificando url() del gif usado como background, faltaban comillas y chrome no encontraba la imagen.
